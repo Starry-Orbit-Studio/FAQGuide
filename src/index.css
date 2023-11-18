@@ -4,12 +4,14 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #ffffffde;
   /* background-color: #242424; */
   position: relative;
   background-image: url("/background.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,7 +26,7 @@
   width: 100%;
   height: 100%;
   backdrop-filter: blur(16px);
-  background-color: rgb(0,0,0,0.5);
+  background-color: #00000080;
   z-index: -1;
 }
 
@@ -53,25 +55,24 @@ h1 {
 button {
   border-radius: 10px;
   border: 1pt solid transparent;
-  border-color: rgb(255, 255, 255);
+  border-color: #ffffff;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: rgba(18, 25, 35, 0.801);
+  background-color: #121923cc;
   cursor: pointer;
   transition: border-color 0.25s;
-  filter: drop-shadow(0 0 4em rgba(255, 255, 255, 0.3));
 }
 button:hover {
-  border-color: rgb(48, 165, 255);
-  outline: 1.5px solid rgb(48, 165, 255);
-  filter: drop-shadow(0 0 0.8em rgb(48, 165, 255));
+  border-color: #30a5ff;
+  outline: 1.5px solid #30a5ff;
+  filter: drop-shadow(0 0 0.8em #30a5ff);
 }
 button:focus,
 button:focus-visible {
-  outline: 2px inset rgba(130, 201, 255, 0.65);
-  outline-offset: -4px
+  outline: 2px inset #82c9ffa6;
+  outline-offset: -4px;
 }
 
 @media (prefers-color-scheme: light) {
