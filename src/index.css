@@ -24,7 +24,7 @@
   width: 100%;
   height: 100%;
   backdrop-filter: blur(16px);
-  background-color: #242424f0;
+  background-color: rgb(0,0,0,0.5);
   z-index: -1;
 }
 
@@ -51,22 +51,27 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
+  border-radius: 10px;
+  border: 1pt solid transparent;
+  border-color: rgb(255, 255, 255);
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: rgba(18, 25, 35, 0.801);
   cursor: pointer;
   transition: border-color 0.25s;
+  filter: drop-shadow(0 0 4em rgba(255, 255, 255, 0.3));
 }
 button:hover {
-  border-color: #646cff;
+  border-color: rgb(48, 165, 255);
+  outline: 1.5px solid rgb(48, 165, 255);
+  filter: drop-shadow(0 0 0.8em rgb(48, 165, 255));
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 2px inset rgba(130, 201, 255, 0.65);
+  outline-offset: -4px
 }
 
 @media (prefers-color-scheme: light) {
@@ -74,12 +79,14 @@ button:focus-visible {
     color: #213547;
   }
   :root::before {
+    backdrop-filter: blur(16px);
     background-color: #ffffff9f;
   }
   a:hover {
     color: #747bff;
   }
   button {
+    border: 1.5pt solid transparent;
     background-color: #f9f9f9;
   }
 }
