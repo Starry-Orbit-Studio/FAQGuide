@@ -1,5 +1,5 @@
 import { component$, useSignal, useTask$ } from "@builder.io/qwik";
-import { useCSSTransition } from './usecsstransition.ts';
+import { useCSSTransition } from "./usecsstransition.ts";
 import { Board } from "./Board.tsx";
 import "./app.css";
 import dataUrl from "/data.yaml?url";
