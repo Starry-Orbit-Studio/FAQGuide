@@ -952,6 +952,7 @@ __metadata:
   resolution: "faq-guide@workspace:."
   dependencies:
     "@builder.io/qwik": "npm:^1.2.17"
+    github-markdown-css: "npm:^5.4.0"
     rehype-stringify: "npm:^10.0.0"
     remark: "npm:^15.0.1"
     remark-breaks: "npm:^4.0.0"
@@ -1008,6 +1009,13 @@ __metadata:
   dependencies:
     node-gyp: "npm:latest"
   conditions: os=darwin
+  languageName: node
+  linkType: hard
+
+"github-markdown-css@npm:^5.4.0":
+  version: 5.4.0
+  resolution: "github-markdown-css@npm:5.4.0"
+  checksum: 45e1934e2d945ad8afb53179480aaf8f4f4355e7ae61a52a83336c1d16b28edd43836915d0fafa9eaa5285420b353c6916826d6e4175e903cfd8e90a216a3a6a
   languageName: node
   linkType: hard
 

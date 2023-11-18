@@ -32,7 +32,7 @@ export const Board = component$<BoardProps>((props: BoardProps) => {
 
     return (
       <>
-        <article dangerouslySetInnerHTML={html.value} />
+        <article class="markdown-body" dangerouslySetInnerHTML={html.value} />
         {goHome}
       </>
     );
